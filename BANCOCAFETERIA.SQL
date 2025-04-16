@@ -6,5 +6,10 @@ CREATE TABLE clientes (
     telefone VARCHAR(20)
 );
 
-
+-- Criação da tabela de produtos
+CREATE TABLE produtos (
+    id_produto SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    preco NUMERIC(10, 2) NOT NULL
+);
 
