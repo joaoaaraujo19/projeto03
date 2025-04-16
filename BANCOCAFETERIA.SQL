@@ -31,3 +31,9 @@ CREATE TABLE pedidos (
     FOREIGN KEY (id_cliente) REFERENCES clientes(id_cliente),
     FOREIGN KEY (id_produto) REFERENCES produtos(id_produto)
 );
+
+-----verificar todas as tabela
+SELECT table_name 
+FROM information_schema.tables
+WHERE table_schema='public'
+AND table_type='BASE TABLE';
