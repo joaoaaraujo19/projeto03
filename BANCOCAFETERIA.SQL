@@ -1,4 +1,6 @@
 --BANCO DE DADOS PROJETO INTEGRADOR `CAFETERIA`
+
+CREATE DATABASE bancocafeteria;
 -- Criação da tabela de clientes
 CREATE TABLE clientes (
     id_cliente SERIAL PRIMARY KEY,
