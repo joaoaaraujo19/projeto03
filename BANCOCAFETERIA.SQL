@@ -11,4 +11,10 @@ CREATE TABLE pedidos (
     cliente_nome TEXT NOT NULL,
     data DATE NOT NULL
 );
+CREATE TABLE pedido_itens (
+    pedido_id INTEGER REFERENCES pedidos(id),
+    produto_id INTEGER REFERENCES produtos(id),
+    quantidade INTEGER NOT NULL,
+    PRIMARY KEY (pedido_id, produto_id)
+);
 
