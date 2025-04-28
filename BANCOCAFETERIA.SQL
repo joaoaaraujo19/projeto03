@@ -18,3 +18,19 @@ CREATE TABLE pedido_itens (
     PRIMARY KEY (pedido_id, produto_id)
 );
 
+---------------------------------------
+----------- Inserção de dados
+
+INSERT INTO produtos (nome, preco, estoque) VALUES
+('Café Expresso', 5.00, 100),
+('Pão de Queijo', 4.50, 50),
+('Bolo de Chocolate', 7.00, 30);
+
+INSERT INTO pedidos (cliente_nome, data) VALUES
+('Fernanda Alves', '2025-04-14'),
+('João Pedro', '2025-04-15');
+
+INSERT INTO pedido_itens (pedido_id, produto_id, quantidade) VALUES
+(1, 1, 2),
+(1, 2, 1),
+(2, 3, 1);
