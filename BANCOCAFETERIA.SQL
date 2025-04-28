@@ -6,5 +6,9 @@ CREATE TABLE clientes (
     telefone VARCHAR(20)
 );
 
-
+CREATE TABLE pedidos (
+    id SERIAL PRIMARY KEY,
+    cliente_nome TEXT NOT NULL,
+    data DATE NOT NULL
+);
 
